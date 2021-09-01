@@ -9,19 +9,24 @@ let modal = document.getElementById('modal');
 let mood = document.getElementById('mood');
 let div = document.querySelectorAll('div');
 
-
 mood.onclick = function(){
     if(div[0].classList.contains('layout')){
-        div[0].classList.toggle('layout');
-        mood.innerText = "L";
-        mood.classList = "btn btn-dark"
+        div[0].classList.toggle('dark');
+        mood.classList = "fas fa-cloud-moon";
     }else{
-        div[0].classList.toggle('layout');
-        mood.innerText = "D";
-        mood.classList = "btn btn-light";
+        div[0].classList.toggle('dark');
+        mood.classList = "fas fa-cloud-sun";
     }
-}
+    mood.addEventListener('click',function(){
+        modalbtn.classList.toggle('modelbtn');
+        mood.classList = "fas fa-cloud-moon";
+    })
+    mood.addEventListener('click',function(){
+        div[2].classList.toggle('card2');
+        mood.classList ="fas fa-cloud-sun";
+    })
 
+}
 
 let closevalidtionmassegfunc = ()=>{
     message.classList.toggle('none')

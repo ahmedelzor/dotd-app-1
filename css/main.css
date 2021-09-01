@@ -1,15 +1,25 @@
 .layout{
     background-size: 100% 100%;
-    background-color: black;
-    height: 500vh;
+    background: linear-gradient(to bottom , rgb(26, 15, 1) 70% , rgb(121, 76, 10));
+    height: 100vh;
     color: white;
     
 
 }
+.dark{
+    background-size: 100% 100%;
+    background: linear-gradient(to bottom , rgb(48, 3, 14) 70% , rgb(150, 32, 48));
+    height: 100vh;
+    color: white;   
+}
 .card{
-    background-color: #333;
+    background-color:rgb(122, 73, 8);
     color: white;
 
+}
+.card2{
+    background-color: rgb(134, 53, 66);
+    color: white;
 }
 .none{
     display: none;
@@ -21,4 +31,14 @@
 .chack{
     text-decoration: line-through;
     background-color: #333;
+}
+#mood{
+    width: 20px;
+    float: left;
+}
+#modalbtn{
+    margin: 50px 25%;
+}
+.modelbtn{
+    background-color: rgb(134, 53, 66) !important;
 }
