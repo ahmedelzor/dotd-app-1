@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="layout">
+      <button id="mood"class="btn btn-light"> L </button>
+        <h1 class=" text-center display-4 text-info ">Welcome at TODO APP</h1>
+        <button id="modalbtn" class="btn btn-primary btn-info btn-block w-50 mx-auto my-5" > Add Task Form Here </button>
+        <div class="container col-md-7">
+            <div class="card ">
+                <div class="card-body">
+                    <div id="alltasks">
+
+                    </div>
+                    <div id="notask" class=" text-center alert alert-danger">NO Data Added Yet</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Add Task</h5>
+              <button  onclick="showmodal()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="  container col-md-12 my-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-group">
+                              <input id="taskinput" type="text" class="form-control" placeholder="new task">
+                              <div id="message" class="alert alert-danger none " role="alert">
+                                <strong>NO DATA</strong> .
+                                <button  id="x" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            </div>
+                            <button id="addbtn" class="btn btn-primary btn-info btn-block" > Add Task Form Here </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button onclick="showmodal()" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+    <script src="js/main.js"></script>
+</body>
+</html>

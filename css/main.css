@@ -1,0 +1,24 @@
+.layout{
+    background-size: 100% 100%;
+    background-color: black;
+    height: 500vh;
+    color: white;
+    
+
+}
+.card{
+    background-color: #333;
+    color: white;
+
+}
+.none{
+    display: none;
+    
+}
+.block{
+   display: block;
+}
+.chack{
+    text-decoration: line-through;
+    background-color: #333;
+}
