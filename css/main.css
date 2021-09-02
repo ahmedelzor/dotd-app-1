@@ -1,15 +1,15 @@
 .layout{
     background-size: 100% 100%;
-    background: linear-gradient(to bottom , rgb(26, 15, 1) 70% , rgb(121, 76, 10));
-    height: 100vh;
+    background: linear-gradient(to bottom , rgb(26, 15, 1) 50% , rgb(121, 76, 10));
+    height: 120vh;
     color: white;
     
 
 }
 .dark{
     background-size: 100% 100%;
-    background: linear-gradient(to bottom , rgb(48, 3, 14) 70% , rgb(150, 32, 48));
-    height: 100vh;
+    background: linear-gradient(to bottom , rgb(48, 3, 14) 50% , rgb(150, 32, 48));
+    height: 120vh;
     color: white;   
 }
 .card{
@@ -29,12 +29,11 @@
    display: block;
 }
 .chack{
-    text-decoration: line-through;
     background-color: #333;
 }
 #mood{
     width: 20px;
-    float: left;
+   display: flex;
 }
 #modalbtn{
     margin: 50px 25%;
